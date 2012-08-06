@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://texturepacker.com-->
+<!-- $TexturePacker:SmartUpdate:8f10b9f8c68f0f15d696385931f58d55$ -->
+<TextureAtlas imagePath="spritesheet.png">
+    <SubTexture name="playButton" x="2" y="2" width="200" height="50"/>
+</TextureAtlas>
