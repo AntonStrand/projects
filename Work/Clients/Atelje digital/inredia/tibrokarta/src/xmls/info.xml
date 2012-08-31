@@ -1,0 +1,75 @@
+<maps>
+	<map>
+		<index>0</index>
+		<name>Tibro 1951</name>
+		<source>/maps/size.jpg</source>
+		<building>
+			<name>Torkels Tvätt</name>
+			<xpos>1300</xpos>
+			<ypos>900</ypos>
+			<desc>
+			Här är lite info om Torkels Tvätt. Jag passar på att skriva ganska mycket eftersom jag antar att så är fallet. Lite jobbigt att det blir konstiga radbrytngar när man inte har allt på en rad. I vilket fall bör den här texten som finns u vara tillräkligt för att var högre än bilden. Skriver nu till lite extra bös för att fylla ut pch förhoppningsvis bli längre än bilden. Det ska bli intressant att se var knappen lägger sig. Lite till så är saken biff. Då kommer textfältet vara högre än bilden och alla olika sätt är ordnade. Det verkar som det inte riktigt räckte så jag får skriva lite till. Egentligen borde jag ha googlat på utfyllnads text. Men men detta får duga så länge. 
+			</desc>
+			<image>foton/big.png</image>
+			<sound>ljud/ljud.mp3</sound>
+			<qr>qr/test.png</qr>
+		</building>
+		<building>
+			<name>Apos pizzeria</name>
+			<xpos>150</xpos>
+			<ypos>695</ypos>
+			<desc>Gissa vad som säljs här!</desc>
+			<image></image>
+			<sound>ljud/ljud.mp3</sound>
+			<qr>qr/test.png</qr>
+		</building>
+	</map>
+	<map>
+		<index>1</index>
+		<name>Tibro 2012</name>
+		<source>/maps/size0.jpg</source>
+		<building>
+			<name>ICA</name>
+			<xpos>1300</xpos>
+			<ypos>500</ypos>
+			<desc></desc>
+			<image>foton/4.jpg</image>
+			<sound>ljud/ljud.mp3</sound>
+			<qr>qr/test.png</qr>
+		</building>
+		<building>
+			<name>Apos pizzeria</name>
+			<xpos>150</xpos>
+			<ypos>695</ypos>
+			<desc>Gissa vad som säljs här!</desc>
+			<image>foton/4.jpg</image>
+			<sound></sound>
+			<qr>qr/test.png</qr>
+		</building>
+	</map>
+	<map>
+		<index>2</index>
+		<name>Tibro 2951</name>
+		<source>/maps/size.jpg</source>
+		<building>
+			<name>Torkels Tvätt</name>
+			<xpos>1300</xpos>
+			<ypos>100</ypos>
+			<desc>
+			Här är lite info om Torkels Tvätt. Jag passar på att skriva ganska mycket eftersom jag antar att så är fallet. Lite jobbigt att det blir konstiga radbrytngar när man inte har allt på en rad. I vilket fall bör den här texten som finns u vara tillräkligt för att var högre än bilden. Skriver nu till lite extra bös för att fylla ut pch förhoppningsvis bli längre än bilden. Det ska bli intressant att se var knappen lägger sig. Lite till så är saken biff. Då kommer textfältet vara högre än bilden och alla olika sätt är ordnade. Det verkar som det inte riktigt räckte så jag får skriva lite till. Egentligen borde jag ha googlat på utfyllnads text. Men men detta får duga så länge. 
+			</desc>
+			<image>foton/b.png</image>
+			<sound>ljud/ljud.mp3</sound>
+			<qr>qr/test.png</qr>
+		</building>
+		<building>
+			<name>Apos pizzeria</name>
+			<xpos>150</xpos>
+			<ypos>695</ypos>
+			<desc>Gissa vad som säljs här!</desc>
+			<image></image>
+			<sound>ljud/ljud.mp3</sound>
+			<qr>qr/test.png</qr>
+		</building>
+	</map>
+</maps>
