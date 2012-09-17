@@ -1,0 +1,9 @@
+<videoplayer>
+	<video>
+		<title>Community</title>
+		<source>videos/video.mp4</source>
+		<thumbnail>thumbs/community.mp4</thumbnail>
+		<desc>Första avsnittet i säsong 3.</desc>
+	</video>
+
+</videoplayer>
