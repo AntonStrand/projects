@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://texturepacker.com-->
+<!-- $TexturePacker:SmartUpdate:b38b55fe0d8bc0fe070bd191ce38d2ac$ -->
+<TextureAtlas imagePath="game_graphics.png">
+    <SubTexture name="bear_sad" x="2" y="2" width="100" height="120"/>
+    <SubTexture name="medium_laying" x="2" y="124" width="250" height="100"/>
+    <SubTexture name="small_wooden_box" x="104" y="2" width="100" height="100"/>
+</TextureAtlas>
