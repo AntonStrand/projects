@@ -1,7 +1,8 @@
 package se.antonstrand.zombierumble.screens
 {
-	import se.antonstrand.zombierumble.events.ConnectionEvent;
+	import se.antonstrand.connection.events.ConnectionEvent;
 	import se.antonstrand.zombierumble.objects.Player;
+	import se.antonstrand.connection.utils.ConnectionManager;
 	
 	import starling.display.Sprite;
 	import starling.events.Event;
@@ -23,12 +24,12 @@ package se.antonstrand.zombierumble.screens
 		
 		private function createListeners(): void
 		{
-			addEventListener(ConnectionEvent.DATA_RECEIVED, onDataReceived_updatePlayer);
+			ConnectionManager.dispatcher.addEventListener(ConnectionEvent.DATA_RECEIVED, onDataReceived_updatePlayer);
 		}
 		
 		private function onDataReceived_updatePlayer( e:ConnectionEvent ):void
 		{
-			
+			trace( e.gameData.degrees, e.gameData.isShooting);
 		}
 		
 		private function onLoop( e:Event ): void

@@ -1,5 +1,6 @@
 package se.antonstrand.zombierumble
 {
+	import se.antonstrand.zombierumble.screens.Game;
 	import se.antonstrand.zombierumble.screens.WelcomeScreen;
 	
 	import starling.display.Sprite;
@@ -15,7 +16,7 @@ package se.antonstrand.zombierumble
 		private function onAddedToStage( e:Event ): void
 		{
 			removeEventListener(Event.ADDED_TO_STAGE, onAddedToStage);
-			addChild( new WelcomeScreen() );
+			addChild( new Game() );
 		}
 	}
 }

@@ -1,8 +1,8 @@
 package se.antonstrand.zombierumble.screens
 {
 	import se.antonstrand.zombierumble.Assets;
-	import se.antonstrand.zombierumble.events.ConnectionEvent;
-	import se.antonstrand.zombierumble.utils.ConnectionManager;
+	import se.antonstrand.connection.events.ConnectionEvent;
+	import se.antonstrand.connection.utils.ConnectionManager;
 	
 	import starling.display.Button;
 	import starling.display.Sprite;

@@ -5,6 +5,7 @@
       <compilerSourcePathEntry kind="1" linkType="1" path="lib-src/Hi Res Stats/src"/>
       <compilerSourcePathEntry kind="1" linkType="1" path="lib-src/PrimaryFeather-Starling-Framework-4ee83c1/starling/src"/>
       <compilerSourcePathEntry kind="1" linkType="1" path="lib-src/AS3Mul"/>
+      <compilerSourcePathEntry kind="1" linkType="1" path="lib-src"/>
     </compilerSourcePath>
     <libraryPath defaultLinkType="0">
       <libraryPathEntry kind="4" path="">
