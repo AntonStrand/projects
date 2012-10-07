@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://texturepacker.com-->
+<!-- $TexturePacker:SmartUpdate:990ab2db5dd6ef9d3fb0d70d40d989df$ -->
+<TextureAtlas imagePath="spritesheet.png">
+    <SubTexture name="down_down_button" x="304" y="407" width="36" height="51"/>
+    <SubTexture name="down_standard_button" x="304" y="354" width="36" height="51"/>
+    <SubTexture name="left_down_button" x="302" y="460" width="50" height="35"/>
+    <SubTexture name="left_standard_button" x="250" y="474" width="50" height="35"/>
+    <SubTexture name="move_plate" x="146" y="354" width="118" height="118"/>
+    <SubTexture name="right_down_button" x="198" y="474" width="50" height="35"/>
+    <SubTexture name="right_standard_button" x="146" y="474" width="50" height="35"/>
+    <SubTexture name="shoot_plate" x="2" y="2" width="350" height="350" frameX="-2" frameY="-2" frameWidth="354" frameHeight="354"/>
+    <SubTexture name="thumb" x="2" y="354" width="142" height="142"/>
+    <SubTexture name="up_down_button" x="266" y="407" width="36" height="51"/>
+    <SubTexture name="up_standard_button" x="266" y="354" width="36" height="51"/>
+</TextureAtlas>
