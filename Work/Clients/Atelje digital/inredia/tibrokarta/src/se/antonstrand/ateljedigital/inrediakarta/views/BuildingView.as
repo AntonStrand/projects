@@ -10,13 +10,14 @@ package se.antonstrand.ateljedigital.inrediakarta.views
 	
 	import se.antonstrand.ateljedigital.inrediakarta.Settings;
 	import se.antonstrand.ateljedigital.inrediakarta.gfx.BuildingHeaderGfx;
+	import se.antonstrand.ateljedigital.inrediakarta.gfx.BuildingHeaderInvertedGfx;
 	import se.antonstrand.ateljedigital.inrediakarta.models.data.BuildingData;
 	
 	public class BuildingView extends Sprite
 	{
 		
 		private var _data			:BuildingData;
-		private var _header			:BuildingHeaderGfx;
+		private var _header			:BuildingHeader;
 		
 		private var _imgLoader		:Loader;
 		private var _info			:BuildingInfoView;
@@ -31,24 +32,25 @@ package se.antonstrand.ateljedigital.inrediakarta.views
 		
 		private function init(): void
 		{	
-			filters = [ Settings.DROP_SHADOW_FILTER ];
+			filters = [ Settings.DROP_SHADOW_FILTER ]; 
+			
+
+			_header = new BuildingHeader( _data.name, data.arrowDir );
+			
 			x = _data.xpos;
 			y = _data.ypos;
 
-			_header = new BuildingHeaderGfx();
-			_header.mouseChildren = false;
-			_header.name_tf.autoSize = TextFieldAutoSize.LEFT;
-			_header.name_tf.text = _data.name;
-			_header.backgroundStandard.width = _header.name_tf.width + 90;
-			_header.backgroundDown.width = _header.name_tf.width + 90;
-
-			trace( _header.backgroundStandard.width );
-			
 			addChild( _header );
 			
 			_info = new BuildingInfoView( _data );
 			_info.x = 30;
 			_info.y = -25;
+			
+			if ( data.arrowDir == BuildingHeader.UP || data.arrowDir == BuildingHeader.INVERTED_UP)
+			{
+				_info.x = 30;
+				_info.y	= 65;
+			}
 	
 		}
 
@@ -69,14 +71,12 @@ package se.antonstrand.ateljedigital.inrediakarta.views
 		
 		public function pressedDown(): void
 		{
-			_header.gotoAndStop( 'down' );
-			_header.backgroundStandard.visible = false;
+			_header.pressedDown();
 		}
 
 		public function released(): void
 		{
-			_header.gotoAndStop( 'standard' );
-			_header.backgroundStandard.visible = true;
+			_header.released();
 		}
 		
 		public function addInfo(): void
@@ -85,12 +85,18 @@ package se.antonstrand.ateljedigital.inrediakarta.views
 			{
 				_info.positionleft();
 				_info.x = -30
+				
 			}
 			
-			if( y + _info.height > Settings.STAGE_H )
+			if( y + _info.height > Settings.STAGE_H - 50)
 			{
 				_info.pos_up()
 				_info.y = -85;
+				
+				if ( data.arrowDir == BuildingHeader.UP || data.arrowDir == BuildingHeader.INVERTED_UP)
+				{
+					_info.y	= 25;
+				}
 			}			
 
 			_showingInfo = true;

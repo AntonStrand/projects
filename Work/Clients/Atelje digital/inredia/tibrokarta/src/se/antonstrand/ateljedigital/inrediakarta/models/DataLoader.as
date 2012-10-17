@@ -55,7 +55,7 @@ package se.antonstrand.ateljedigital.inrediakarta.models
 				
 				for each (var b:XML in buildingList)
 				{
-					buildings.push( new BuildingData( b.name, b.desc, b.image, b.sound, b.qr, b.xpos, b.ypos ));
+					buildings.push( new BuildingData( b.name, b.desc, b.image, b.sound, b.qr, b.arrowDir, b.xpos, b.ypos ));
 				}
 			
 				_maps.push( new MapData( map.name, map.source, map.index, buildings ) ); 

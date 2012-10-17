@@ -10,7 +10,7 @@ package se.antonstrand.ateljedigital.inrediakarta
 		public static const INFO_BORDER		:uint = 20; 
 		public static const INFO_DISTANCE	:uint = 10; 
 
-		public static const RESTART_DELAY	:Number = .3; 
+		public static const RESTART_DELAY	:Number = 5; 
 
 		public static const INFO_URL		:String = '/xmls/info.xml'; 
 	

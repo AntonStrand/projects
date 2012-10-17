@@ -1,9 +1,13 @@
 package se.antonstrand.ateljedigital.inrediakarta.models.data
 {
+	import se.antonstrand.ateljedigital.inrediakarta.views.BuildingHeader;
+
 	public class BuildingData
 	{
 		private var _xpos		:int;
 		private var _ypos		:int;
+		
+		private var _arrowDir	:String;
 
 		private var _name		:String;
 		private var _desc		:String;
@@ -11,7 +15,7 @@ package se.antonstrand.ateljedigital.inrediakarta.models.data
 		private var _sound_src	:String;
 		private var _qr_src		:String;
 		
-		public function BuildingData( p_name:String, p_desc:String, p_image:String, p_sound:String, p_qr:String, p_xpos:uint, p_ypos:uint )
+		public function BuildingData( p_name:String, p_desc:String, p_image:String, p_sound:String, p_qr:String, arrowDir:String, p_xpos:uint, p_ypos:uint )
 		{
 			_xpos = p_xpos;
 			_ypos = p_ypos;
@@ -21,6 +25,12 @@ package se.antonstrand.ateljedigital.inrediakarta.models.data
 			_image_src = p_image;
 			_sound_src = p_sound;
 			_qr_src = p_qr;
+			
+			if( arrowDir == '' )
+			{
+				arrowDir = BuildingHeader.NORMAL;
+			}
+			_arrowDir = arrowDir;
 			
 		}
 		
@@ -58,5 +68,11 @@ package se.antonstrand.ateljedigital.inrediakarta.models.data
 		{
 			return _qr_src;
 		}
+
+		public function get arrowDir():String
+		{
+			return _arrowDir;
+		}
+
 	}
 }

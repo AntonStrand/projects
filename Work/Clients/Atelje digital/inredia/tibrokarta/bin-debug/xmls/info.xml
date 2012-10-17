@@ -1,75 +1,298 @@
 <maps>
-	<map>
-		<index>0</index>
-		<name>Tibro 1951</name>
-		<source>/maps/size.jpg</source>
-		<building>
-			<name>Torkels Tvätt</name>
-			<xpos>1300</xpos>
-			<ypos>900</ypos>
-			<desc>
-			Här är lite info om Torkels Tvätt. Jag passar på att skriva ganska mycket eftersom jag antar att så är fallet. Lite jobbigt att det blir konstiga radbrytngar när man inte har allt på en rad. I vilket fall bör den här texten som finns u vara tillräkligt för att var högre än bilden. Skriver nu till lite extra bös för att fylla ut pch förhoppningsvis bli längre än bilden. Det ska bli intressant att se var knappen lägger sig. Lite till så är saken biff. Då kommer textfältet vara högre än bilden och alla olika sätt är ordnade. Det verkar som det inte riktigt räckte så jag får skriva lite till. Egentligen borde jag ha googlat på utfyllnads text. Men men detta får duga så länge. 
-			</desc>
-			<image>foton/big.png</image>
-			<sound>ljud/ljud.mp3</sound>
-			<qr>qr/test.png</qr>
-		</building>
-		<building>
-			<name>Apos pizzeria</name>
-			<xpos>150</xpos>
-			<ypos>695</ypos>
-			<desc>Gissa vad som säljs här!</desc>
-			<image></image>
-			<sound>ljud/ljud.mp3</sound>
-			<qr>qr/test.png</qr>
-		</building>
-	</map>
-	<map>
-		<index>1</index>
-		<name>Tibro 2012</name>
-		<source>/maps/size0.jpg</source>
-		<building>
-			<name>ICA</name>
-			<xpos>1300</xpos>
-			<ypos>500</ypos>
-			<desc></desc>
-			<image>foton/4.jpg</image>
-			<sound>ljud/ljud.mp3</sound>
-			<qr>qr/test.png</qr>
-		</building>
-		<building>
-			<name>Apos pizzeria</name>
-			<xpos>150</xpos>
-			<ypos>695</ypos>
-			<desc>Gissa vad som säljs här!</desc>
-			<image>foton/4.jpg</image>
-			<sound></sound>
-			<qr>qr/test.png</qr>
-		</building>
-	</map>
-	<map>
-		<index>2</index>
-		<name>Tibro 2951</name>
-		<source>/maps/size.jpg</source>
-		<building>
-			<name>Torkels Tvätt</name>
-			<xpos>1300</xpos>
-			<ypos>100</ypos>
-			<desc>
-			Här är lite info om Torkels Tvätt. Jag passar på att skriva ganska mycket eftersom jag antar att så är fallet. Lite jobbigt att det blir konstiga radbrytngar när man inte har allt på en rad. I vilket fall bör den här texten som finns u vara tillräkligt för att var högre än bilden. Skriver nu till lite extra bös för att fylla ut pch förhoppningsvis bli längre än bilden. Det ska bli intressant att se var knappen lägger sig. Lite till så är saken biff. Då kommer textfältet vara högre än bilden och alla olika sätt är ordnade. Det verkar som det inte riktigt räckte så jag får skriva lite till. Egentligen borde jag ha googlat på utfyllnads text. Men men detta får duga så länge. 
-			</desc>
-			<image>foton/b.png</image>
-			<sound>ljud/ljud.mp3</sound>
-			<qr>qr/test.png</qr>
-		</building>
-		<building>
-			<name>Apos pizzeria</name>
-			<xpos>150</xpos>
-			<ypos>695</ypos>
-			<desc>Gissa vad som säljs här!</desc>
-			<image></image>
-			<sound>ljud/ljud.mp3</sound>
-			<qr>qr/test.png</qr>
-		</building>
-	</map>
+      <map>
+            <index>0</index>
+                 <name>1951</name>
+                 <source>/maps/1951.jpg</source>
+				<building>
+                       <name>Ruders magasin</name>
+                       <!-- Casesensitive. Ange riktning: normal, inverted, up, invertedUp. Om inget anger blir det normal -->
+                       <arrowDir>up</arrowDir>
+                       <xpos>810</xpos>
+                       <ypos>220</ypos>
+                       <desc>Vid järnvägsövergången låg det faluröda spannmålsmagasinet. Användes av godset Ruder som ligger utanför Tibro mot Hjo.</desc>
+                       <image>/foton/1951_rudersmagasin.jpg</image>
+                       <sound></sound>
+                       <qr></qr>
+                </building>
+
+                 <building>
+                       <name>Posthuset (Dojan)</name>
+                       <!-- Casesensitive. Ange riktning: normal, inverted, up, invertedUp. Om inget anger blir det normal -->
+                       <arrowDir>up</arrowDir>
+                       <xpos>1090</xpos>
+                       <ypos>890</ypos>
+                       <desc>Tibros posthus som byggdes 1950. Tidigare var posten inrymd i järnvågsstationen och i Frydens stallänga. (Numera fritidsgården "Dojan")</desc>
+                       <image>/foton/1951_posthuset.jpg</image>
+                       <sound></sound>
+                       <qr></qr>
+                 </building>
+
+				<building>
+                       <name>Ljungkvistes Vallgatan</name>
+                       <!-- Casesensitive. Ange riktning: normal, inverted, up, invertedUp. Om inget anger blir det normal -->
+                       <arrowDir>invertedUp</arrowDir>
+                       <xpos>1850</xpos>
+                       <ypos>360</ypos>
+                       <desc>En diversehandel som senare köptes upp av Frydens.</desc>
+                       <image></image>
+                       <sound></sound>
+                       <qr></qr>
+                </building>
+
+				 <building>
+                       <name>Centrum / Stora torget</name>
+                       <!-- Casesensitive. Ange riktning: normal, inverted, up, invertedUp. Om inget anger blir det normal -->
+                       <arrowDir>invertedUp</arrowDir>
+                       <xpos>800</xpos>
+                       <ypos>90</ypos>
+                       <desc>Stora torget med Frydens handelsbod som blev ortens första butik. Från lilla torget till höger (Kr�satorget) l�per Vallgatan, Tibros första gata, utmed vilken små butiker och cafeer återfanns. Alldeles i början av Vallgatan låg "Ljungkvistes". även detta en diversehandel som senare köptes in av Frydens. Bankhuset (Skaraborgs enskilda bank) byggdes 1934 och kom att bilda första etappen i inramningen av stora torget.</desc>
+                       <image>/foton/1951_storatorget.jpg</image>
+                       <sound></sound>
+                       <qr></qr>
+                </building>
+
+				<building>
+					   <name>Småskolan</name>
+					   <!-- Casesensitive. Ange riktning: normal, inverted, up, invertedUp. Om inget anger blir det normal -->
+                       <arrowDir>invertedUp</arrowDir>
+                       <xpos>1600</xpos>
+                       <ypos>20</ypos>
+                       <desc>Tibros småskola togs i bruk 1920 eftersom befolkningen då vuxit och det behövdes en centralt placerad skola.</desc>
+                       <image>/foton/1951_smaskolan.jpg</image>
+                       <sound></sound>
+                       <qr></qr>
+                </building>
+				
+				<building>
+                       <name>Missionskyrkan</name>
+                       <!-- Casesensitive. Ange riktning: normal, inverted, up, invertedUp. Om inget anger blir det normal -->
+                       <arrowDir></arrowDir>
+                       <xpos>1000</xpos>
+                       <ypos>740</ypos>
+                       <desc>Frikyrkor�relsen har haft ett starkt f�ste i Tibro vid sidan av nykterhetsr�relsen. Missionskyrkan fick sin placering i Sk�lamossen.</desc>
+                       <image>/foton/1951_missionskyrkan.jpg</image>
+                       <sound></sound>
+                       <qr></qr>
+                </building>
+				
+				<building>
+                       <name>Frans Karlssons Möbelfabrik</name>
+                       <!-- Casesensitive. Ange riktning: normal, inverted, up, invertedUp. Om inget anger blir det normal -->
+                       <arrowDir></arrowDir>
+                       <xpos>1040</xpos>
+                       <ypos>610</ypos>
+                       <desc>L�g i h�rnet G�rdhemsgatan/Skolgatan och var snickeriverksamhet mellan 1911-1967. P� sin tid var det en stor arbetsplats med 10-12 anst�llda. Verkstaden byggdes till vid ett flertal tillf�llen.</desc>
+                       <image>/foton/1951_franskarlsson.jpg</image>
+                       <sound></sound>
+                       <qr></qr>
+                </building>
+
+						
+
+
+<building>
+                       <name>J�rnv�gen</name>
+                       <!-- Casesensitive. Ange riktning: normal, inverted, up, invertedUp. Om inget anger blir det normal -->
+                       <arrowDir></arrowDir>
+                       <xpos>1550</xpos>
+                       <ypos>270</ypos>
+                       <desc>
+Stationen till h�ger syns ej p� fotot, d�remot taket p� godsmagasinet. 1876 �ppnades j�rnv�gen mellan Karlsborg och Sk�vde, vilket kom att bli startpunkten f�r t�torten Tibros uppbyggnad och snickeriverksamhetens utveckling. I bildens nedre h�gra kant v�xte Tibros f�rsta "industriomr�de" Sk�lamosse fram under tidiga 1900-talet. Bostadshusen kompletterades med en mindre m�belverkstad p� tomten.</desc>
+                       <image>/foton/1951_jarnvagen.jpg</image>
+                       <sound></sound>
+                       <qr></qr>
+                </building>
+<building>
+<name>Tibro Andelsmejeri</name>
+<!-- Casesensitive. Ange riktning: normal, inverted, up, invertedUp. Om inget anger blir det normal -->
+                       <arrowDir></arrowDir>
+                       <xpos>500</xpos>
+                       <ypos>550</ypos>
+                       <desc>
+Startade 1897 och drevs fram till 1962. Ursprungligt tak med lanterniner togs bort vid en modernisering.
+				</desc>
+                       <image>/foton/1951_mejeri.jpg</image>
+                       <sound></sound>
+                       <qr></qr>
+                </building>
+
+<building>
+
+<name>F�rsta LBC</name>
+<!-- Casesensitive. Ange riktning: normal, inverted, up, invertedUp. Om inget anger blir det normal -->
+                       <arrowDir></arrowDir>
+                       <xpos>190</xpos>
+                       <ypos>480</ypos>
+                       <desc>
+Lastbilscentralen, var inrymd i denna lokal. Ombyggdes till m�belindustri av V�stg�ta m�belindustri 1945.
+				</desc>
+                       <image></image>
+                       <sound></sound>
+                       <qr></qr>
+                </building>
+<building>
+<name>Sk�lamossens Verkst�der</name>
+<!-- Casesensitive. Ange riktning: normal, inverted, up, invertedUp. Om inget anger blir det normal -->
+                       <arrowDir></arrowDir>
+                       <xpos>1650</xpos>
+                       <ypos>500</ypos>
+                       <desc>
+I detta omr�de fanns m�nga olika m�belsnickerier. Isidor Johnssons Tibro Decopeurverkstad grundad �r 1911, l�g p� Polhemsgatan och sysslade med intarsiaarbeten. Fabriken sysselsatte ett tiotal personer och drevs fram till 1960 d� byggnaden revs. Br�derna Johanssons m�belsnickeri, Skolgatan 3. Verkstaden byggdes 1912 av br�derna Johan och Axel Johansson som �ven uppf�rde ett bostadshus till sina anst�llda. P� 1930-talet drevs verksamheten som bildhuggeriverkstad. "Motor-Edvin" Johanssons verkstad, snickeriverksamhet mellan 1920-1938. "Maskin-Arvid" Johansson fick namnet eftersom han tidigt utrustat sin verkstad med maskiner. Dit kunde snickerier utan maskiner komma f�r att "maskina".
+				</desc>
+                       <image>/foton/1951_skalamossen.jpg</image>
+                       <sound></sound>
+                       <qr></qr>
+                </building>
+
+
+                
+      </map>
+    
+    <map>
+        <index>1</index>
+        <name>1964</name>
+        <source>/maps/1964.jpg</source>
+        <building>
+            <name>Ruders magasin</name>
+            <!-- Casesensitive. Ange riktning: normal, inverted, up, invertedUp. Om inget anger blir det normal -->
+            <arrowDir></arrowDir>
+            <xpos>810</xpos>
+            <ypos>220</ypos>
+            <desc>Vid j�rnv�gs�verg�ngen l�g det falur�da spannm�lsmagasinet. Anv�ndes av godset Ruder som ligger utanf�r Tibro mot Hjo.</desc>
+            <image>/foton/1951_rudersmagasin.jpg</image>
+            <sound></sound>
+            <qr></qr>
+        </building>
+        
+        <building>
+            <name>Posthuset (Dojan)</name>
+            <!-- Casesensitive. Ange riktning: normal, inverted, up, invertedUp. Om inget anger blir det normal -->
+                       <arrowDir>inverted</arrowDir>
+            <xpos>1890</xpos>
+            <ypos>190</ypos>
+            <desc>Tibros posthus som byggdes 1950. Tidigare var posten inrymd i j�rnv�gsstationen och i Frydens stall�nga. (Numera fritidsgården "Dojan")</desc>
+            <image>/foton/1951_posthuset.jpg</image>
+            <sound></sound>
+            <qr></qr>
+        </building>
+        
+        <building>
+            <name>Ljungkvistes Vallgatan</name>
+            <!-- Casesensitive. Ange riktning: normal, inverted, up, invertedUp. Om inget anger blir det normal -->
+                       <arrowDir></arrowDir>
+            <xpos>1050</xpos>
+            <ypos>90</ypos>
+            <desc>En diversehandel som senare k�ptes upp av Frydens.</desc>
+            <image></image>
+            <sound></sound>
+            <qr></qr>
+        </building>
+        
+        <building>
+            <name>Centrum / Stora torget</name>
+            <!-- Casesensitive. Ange riktning: normal, inverted, up, invertedUp. Om inget anger blir det normal -->
+                       <arrowDir></arrowDir>
+            <xpos>800</xpos>
+            <ypos>90</ypos>
+            <desc>Stora torget med Frydens handelsbod som blev ortens f�rsta butik. Fr�n lilla torget till h�ger (Kr�satorget) l�per Vallgatan, Tibros f�rsta gata, utmed vilken sm� butiker och cafeer �terfanns. Alldeles i b�rjan av Vallgatan l�g "Ljungkvistes". �ven detta en diversehandel som senare k�ptes in av Frydens. Bankhuset (Skaraborgs enskilda bank) byggdes 1934 och kom att bilda f�rsta etappen i inramningen av stora torget.</desc>
+            <image>/foton/1951_storatorget.jpg</image>
+            <sound></sound>
+            <qr></qr>
+        </building>
+        
+        <building>
+            <name>Sm�skolan</name>
+            <!-- Casesensitive. Ange riktning: normal, inverted, up, invertedUp. Om inget anger blir det normal -->
+                       <arrowDir></arrowDir>
+            <xpos>1600</xpos>
+            <ypos>820</ypos>
+            <desc>Tibros sm�skola togs i bruk 1920 eftersom befolkningen d� vuxit och det beh�vdes en centralt placerad skola.</desc>
+            <image>/foton/1951_smaskolan.jpg</image>
+            <sound></sound>
+            <qr></qr>
+        </building>
+        
+        <building>
+            <name>Missionskyrkan</name>
+            <!-- Casesensitive. Ange riktning: normal, inverted, up, invertedUp. Om inget anger blir det normal -->
+                       <arrowDir></arrowDir>
+            <xpos>1000</xpos>
+            <ypos>740</ypos>
+            <desc>Frikyrkor�relsen har haft ett starkt f�ste i Tibro vid sidan av nykterhetsr�relsen. Missionskyrkan fick sin placering i Sk�lamossen.</desc>
+            <image>/foton/1951_missionskyrkan.jpg</image>
+            <sound></sound>
+            <qr></qr>
+        </building>
+        
+        <building>
+            <name>Frans Karlssons M�belfabrik</name>
+            <!-- Casesensitive. Ange riktning: normal, inverted, up, invertedUp. Om inget anger blir det normal -->
+                       <arrowDir></arrowDir>
+            <xpos>1040</xpos>
+            <ypos>610</ypos>
+            <desc>L�g i h�rnet G�rdhemsgatan/Skolgatan och var snickeriverksamhet mellan 1911-1967. P� sin tid var det en stor arbetsplats med 10-12 anst�llda. Verkstaden byggdes till vid ett flertal tillf�llen.</desc>
+            <image>/foton/1951_franskarlsson.jpg</image>
+            <sound></sound>
+            <qr></qr>
+        </building>
+        
+        
+        
+        
+        <building>
+            <name>J�rnv�gen</name>
+            <!-- Casesensitive. Ange riktning: normal, inverted, up, invertedUp. Om inget anger blir det normal -->
+                       <arrowDir></arrowDir>
+            <xpos>1550</xpos>
+            <ypos>270</ypos>
+            <desc>
+                Stationen till h�ger syns ej p� fotot, d�remot taket p� godsmagasinet. 1876 �ppnades j�rnv�gen mellan Karlsborg och Sk�vde, vilket kom att bli startpunkten f�r t�torten Tibros uppbyggnad och snickeriverksamhetens utveckling. I bildens nedre h�gra kant v�xte Tibros f�rsta "industriomr�de" Sk�lamosse fram under tidiga 1900-talet. Bostadshusen kompletterades med en mindre m�belverkstad p� tomten.</desc>
+            <image>/foton/1951_jarnvagen.jpg</image>
+            <sound></sound>
+            <qr></qr>
+        </building>
+        <building>
+            <name>Tibro Andelsmejeri</name>
+            <xpos>500</xpos>
+            <ypos>550</ypos>
+            <desc>
+                Startade 1897 och drevs fram till 1962. Ursprungligt tak med lanterniner togs bort vid en modernisering.
+            </desc>
+            <image>/foton/1951_mejeri.jpg</image>
+            <sound></sound>
+            <qr></qr>
+        </building>
+        
+        <building>
+            
+            <name>F�rsta LBC</name>
+            <!-- Casesensitive. Ange riktning: normal, inverted, up, invertedUp. Om inget anger blir det normal -->
+                       <arrowDir></arrowDir>
+            <xpos>190</xpos>
+            <ypos>480</ypos>
+            <desc>
+                Lastbilscentralen, var inrymd i denna lokal. Ombyggdes till m�belindustri av V�stg�ta m�belindustri 1945.
+            </desc>
+            <image></image>
+            <sound></sound>
+            <qr></qr>
+        </building>
+        <building>
+            <name>Sk�lamossens Verkst�der</name>
+            <!-- Casesensitive. Ange riktning: normal, inverted, up, invertedUp. Om inget anger blir det normal -->
+                       <arrowDir></arrowDir>
+            <xpos>1650</xpos>
+            <ypos>500</ypos>
+            <desc>
+                I detta omr�de fanns m�nga olika m�belsnickerier. Isidor Johnssons Tibro Decopeurverkstad grundad �r 1911, l�g p� Polhemsgatan och sysslade med intarsiaarbeten. Fabriken sysselsatte ett tiotal personer och drevs fram till 1960 d� byggnaden revs. Br�derna Johanssons m�belsnickeri, Skolgatan 3. Verkstaden byggdes 1912 av br�derna Johan och Axel Johansson som �ven uppf�rde ett bostadshus till sina anst�llda. P� 1930-talet drevs verksamheten som bildhuggeriverkstad. "Motor-Edvin" Johanssons verkstad, snickeriverksamhet mellan 1920-1938. "Maskin-Arvid" Johansson fick namnet eftersom han tidigt utrustat sin verkstad med maskiner. Dit kunde snickerier utan maskiner komma f�r att "maskina".
+            </desc>
+            <image>/foton/1951_skalamossen.jpg</image>
+            <sound></sound>
+            <qr></qr>
+        </building>
+        
+        
+        
+    </map>
+
 </maps>

@@ -7,14 +7,18 @@ package se.antonstrand.ateljedigital.inrediakarta.views
 	import se.antonstrand.ateljedigital.inrediakarta.Settings;
 	import se.antonstrand.ateljedigital.inrediakarta.events.MenuEvent;
 	import se.antonstrand.ateljedigital.inrediakarta.gfx.MapName;
+	import se.antonstrand.ateljedigital.inrediakarta.views.gui.ToggleButton;
+
 	
 	public class Menu extends Sprite
 	{
 		[Embed(source="assets/graphics/menuborder.png")]
 		private var MenuBorder		:Class;
 		
+		
+		private var _toggleButton	:ToggleButton;
 		private var _buttons		:Vector.<MenuButton>;
-		private var _mapNameTf:MapName;
+		private var _mapNameTf		:MapName;
 		
 		public function Menu()
 		{
@@ -49,19 +53,29 @@ package se.antonstrand.ateljedigital.inrediakarta.views
 		private function createMenu(): void
 		{
 			var menuPattern : Bitmap = new MenuBorder();
-			//menuPattern.y = Settings.STAGE_H - menuPattern.height;
-			menuPattern.filters = [ Settings.DROP_SHADOW_FILTER ];
 			addChildAt( menuPattern, 0 );
+			
+
 			
 			_mapNameTf = new MapName();
 			_mapNameTf.filters = [ Settings.DROP_SHADOW_FILTER ];
 			_mapNameTf.y = -10;
 			addChild( _mapNameTf );
+			
+			_toggleButton = new ToggleButton();
+			_toggleButton.filters = [Settings.DROP_SHADOW_FILTER];
+			_toggleButton.x = Settings.STAGE_W - (_toggleButton.width + 50);
+			_toggleButton.y = 40;
+			addChild( _toggleButton );
+		}
+		
+		public function get toggleButton(): ToggleButton
+		{
+			return _toggleButton;
 		}
 		
 		private function onClick_disatch( e:MouseEvent ): void
 		{
-			trace( e.target );
 			var target : MenuButton = MenuButton( e.target );
 			
 			dispatchEvent( new MenuEvent( MenuEvent.PRESSED, target.index ));

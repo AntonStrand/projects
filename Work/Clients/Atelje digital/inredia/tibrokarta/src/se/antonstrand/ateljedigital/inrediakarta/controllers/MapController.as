@@ -49,7 +49,6 @@ package se.antonstrand.ateljedigital.inrediakarta.controllers
 
 		public function get isPlayingSound(): Boolean
 		{
-			trace( _cur_target_idx );
 			if( _cur_target_idx >= 0 ) return BuildingView(_buildings[ _cur_target_idx ]).isPlayingSound;
 			else return false;
 		}
@@ -73,7 +72,7 @@ package se.antonstrand.ateljedigital.inrediakarta.controllers
 			_cur_target_idx = -1;
 		}
 		
-		public function tweenBuildings(): void
+		public function tweenAddBuildings(): void
 		{
 			// Gör om _buildings till array
 			for (var i:int = 0; i < _buildings.length; i++) 
@@ -83,7 +82,13 @@ package se.antonstrand.ateljedigital.inrediakarta.controllers
 				_buildings[i].alpha = 0;
 			}
 			
-			TweenMax.allTo(_buildings, 1, {scaleX:1, scaleY:1, alpha:1, ease:Elastic.easeInOut}, .3); 
+			TweenMax.allTo(_buildings, 1, {scaleX:1, scaleY:1, alpha:1, ease:Elastic.easeInOut}, .2); 
+		}
+		
+		public function tweenRemoveBuildings(): void
+		{
+			TweenMax.allTo(_buildings, 1, {scaleX:0, scaleY:0, alpha:0, ease:Elastic.easeInOut}, .2); 	
+			closeInfo();
 		}
 		
 		
@@ -99,14 +104,17 @@ package se.antonstrand.ateljedigital.inrediakarta.controllers
 			}
 			
 			addEventListener(MouseEvent.MOUSE_UP, onMouseUp_showData);
-			tweenBuildings();
+			tweenAddBuildings();
 		}
 		
 		private function onMouseDown_pressDown( e:Event ): void
 		{
-			if( e.target is BuildingHeaderGfx )
+			trace( e.currentTarget);
+			if( e.currentTarget is BuildingView )
 			{
-				_mouse_target = BuildingView( e.target.parent );
+				_mouse_target = BuildingView( e.currentTarget );
+				// För att den ska lägga sig överst
+				addChild( _mouse_target );
 				_mouse_target.pressedDown();
 			}
 		}

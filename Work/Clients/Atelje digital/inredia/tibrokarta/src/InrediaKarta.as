@@ -4,6 +4,7 @@ package
 	import flash.display.StageAlign;
 	import flash.display.StageDisplayState;
 	import flash.display.StageScaleMode;
+	import flash.ui.Mouse;
 	
 	import se.antonstrand.ateljedigital.inrediakarta.controllers.MainController;
 	import se.antonstrand.ateljedigital.inrediakarta.models.ModelDatabase;
@@ -16,10 +17,14 @@ package
 		
 		public function InrediaKarta()
 		{
-			//stage.displayState = StageDisplayState.FULL_SCREEN_INTERACTIVE;
 			stage.align = StageAlign.TOP_LEFT;
-			//stage.scaleMode = StageScaleMode.SHOW_ALL;
+			stage.displayState = StageDisplayState.FULL_SCREEN;
+			//stage.scaleMode = StageScaleMode.NO_SCALE;
 			
+			stage.nativeWindow.activate();
+			stage.nativeWindow.orderToBack();
+			stage.nativeWindow.orderToFront();
+			Mouse.hide();
 			
 			//_modelDatabase = new ModelDatabase();
 			var controller : MainController = new MainController( new ModelDatabase );

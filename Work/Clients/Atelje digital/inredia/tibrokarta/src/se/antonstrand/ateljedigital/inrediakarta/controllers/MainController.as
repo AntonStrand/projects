@@ -55,10 +55,12 @@ package se.antonstrand.ateljedigital.inrediakarta.controllers
 		private function createMenu(): void
 		{
 			_menu = new Menu();
-			_menu.y = Settings.STAGE_H - (_menu.height -10);
-			
+			_menu.y = Settings.STAGE_H - 50;
 			addChild( _menu );
+			
+			_menu.toggleButton.addEventListener(MouseEvent.CLICK, onToggleButtonClick_changeVisibleState);
 		}
+		
 		
 		private function addContent(): void
 		{
@@ -68,7 +70,6 @@ package se.antonstrand.ateljedigital.inrediakarta.controllers
 			{
 				_maps.push( new MapController( _model.maps[i] ));
 				_menu.addButton( _model.maps[i].name, i );
-				trace( _model.maps[i].name );
 			}
 			
 			_menu.updateMapNameTo( _maps[ _cur_map ].mapName );
@@ -90,17 +91,21 @@ package se.antonstrand.ateljedigital.inrediakarta.controllers
 		
 		private function changeMap( idx:int ): void
 		{	
-			_prev_map = _cur_map;
-			_cur_map = idx;
-			
-			_menu.updateMapNameTo( _maps[ _cur_map ].mapName );
-			
-			addChildAt( _maps[ _cur_map ], 0 ); 
-			_maps[ _cur_map ].alpha = 0;
-			if( contains( _maps[ _cur_map ])) TweenLite.to( _maps[ _cur_map ], .3, { alpha: 1, onComplete: removePrevMap});
-
-			_maps[ _cur_map ].tweenBuildings();
-			
+			if( idx != _cur_map )
+			{
+				_prev_map = _cur_map;
+				_cur_map = idx;
+				
+				_menu.updateMapNameTo( _maps[ _cur_map ].mapName );
+				
+				addChildAt( _maps[ _cur_map ], 0 ); 
+				_maps[ _cur_map ].alpha = 0;
+				if( contains( _maps[ _cur_map ])) TweenLite.to( _maps[ _cur_map ], .3, { alpha: 1, onComplete: removePrevMap});
+	
+				_maps[ _cur_map ].tweenAddBuildings();
+				
+				_menu.toggleButton.open();
+			}
 		}
 		
 		private function removePrevMap(): void
@@ -113,6 +118,20 @@ package se.antonstrand.ateljedigital.inrediakarta.controllers
 		}
 		
 		/* EVENTS */
+		private function onToggleButtonClick_changeVisibleState(e:MouseEvent):void
+		{
+			if( _menu.toggleButton.isVisible )
+			{
+				_menu.toggleButton.close();
+				_maps[ _cur_map ].tweenRemoveBuildings();
+			}
+			else
+			{
+				_menu.toggleButton.open();
+				_maps[ _cur_map ].tweenAddBuildings();				
+			}
+		}
+		
 		private function onModelsLoaded_addContent( e:Event ): void
 		{
 			_model.removeEventListener(ModelEvent.LOADED, onModelsLoaded_addContent);

@@ -110,6 +110,7 @@ package se.antonstrand.ateljedigital.inrediakarta.views
 			_textGfx = new Sprite();
 			
 			var headline : Headline = new Headline();
+			headline.textField.autoSize = TextFieldAutoSize.CENTER;
 			headline.textField.text = _data.name;
 			_textGfx.addChild( headline );
 
@@ -119,7 +120,7 @@ package se.antonstrand.ateljedigital.inrediakarta.views
 			else if( _image ) _image.x = (_textGfx.width*.5 - _image.width*.5) + Settings.INFO_BORDER;
 			infoBox.desc_tf.autoSize = TextFieldAutoSize.LEFT;
 			infoBox.desc_tf.text = _data.description;
-			infoBox.y = headline.height + Settings.INFO_DISTANCE;;
+			infoBox.y = headline.height + Settings.INFO_DISTANCE;
 			_textGfx.addChild( infoBox );
 			
 			headline.x = _textGfx.width*.5 - headline.width*.5; 
@@ -138,7 +139,7 @@ package se.antonstrand.ateljedigital.inrediakarta.views
 			{
 				createSoundPlayer();			
 			}	
-			else if( _data.qr_code_source == "" )
+			else if( _data.qr_code_source != "" )
 			{
 				trace('Create QR');
 				_qrImage = new Image( _data.qr_code_source );	

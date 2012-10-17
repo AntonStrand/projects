@@ -41,7 +41,7 @@ package se.antonstrand.ateljedigital.inrediakarta.views
 		
 		private function onComplete_addMap( e:Event ): void
 		{
-			_mapLoader.scaleX = _mapLoader.scaleY = (Settings.STAGE_H -70)/_mapLoader.height;
+			//_mapLoader.scaleX = _mapLoader.scaleY = (Settings.STAGE_H -50)/_mapLoader.height;
 			addChild( _mapLoader );
 			_mapLoader = null;
 
